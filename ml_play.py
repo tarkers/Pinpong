@@ -30,17 +30,9 @@ def ml_loop(side: str):
             else : return 0 # NONE
     def cut_the_ball():
         tmp=rd.randint(0,2)
-        if side=="1P":
-            if scene_info["ball_speed"][0]<0 : return 1 # goes left
-            elif scene_info["ball_speed"][0]>0: return 2 # goes right
-            else : return 0 # NONE
-        else:
-            if scene_info["ball_speed"][0]<0 : return 2 # goes left
-            elif scene_info["ball_speed"][0]>0: return 1 # goes right
-            else : return 1 # NONE
-        # if tmp==2: return 2 # goes left
-        # elif tmp==1: return 1 # goes right
-        # else : return 1 # NONE
+        if tmp==2: return 2 # goes left
+        elif tmp==1: return 1 # goes right
+        else : return 1 # NONE
 
 
     def ml_loop_for_1P(): 
